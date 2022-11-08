@@ -17,3 +17,29 @@ Cada time deve entregar: 1. Códigos em C ou C++ com o algoritmo funcionando com
 Prazos   
 
 - Informar escolha do repositório que utilizarão e os integrantes do time através do e-mail geancarlo@unisc.br até 08/11/2022.  -  Data limite de entrega/apresentação 22/11/2022 (pode ser entregue antes). 
+
+
+
+
+Especificações do Trabalho 2 • 
+
+Cada grupo deve encontrar os pré requisitos do trabalho:
+1.	Usar a soma os elementos da matrícula para definir o tamanho da  matriz.
+Ex: 123456 = 1+2+3+4+5+6 = 21
+Neste caso, o tamanho da matriz deve ser:
+Para Trabalho individual: o dobro do somatório dos elementos da matrícula (21*2=42); matriz[42][42]
+Para Trabalho em duplas: a soma do somatório (21+17=38); matriz[38][38]
+
+2.	Usar o maior elemento da matrícula para o tamanho mínimo da aresta das formas a serem desenhadas.
+Ex: 123456 = 6
+Neste caso, o tamanho das arestas deve ser 6.
+Em caso de duplas, deve ser o maior dos elementos entre as duas matrículas.
+
+3.	Preencher a forma desenhada com o menor elemento da matrícuma que seja diferente de zero.
+Ex: 123456 = 1
+Neste caso, o numero é 1.
+
+a.	Engenharia Civil: Casa (Triângulo+quadrado) 
+b.	Engenharia de computação: Monitor com zeros nas diagonais principal e secundária,  com teclado (quadrado+retângulo) 
+
+/end
