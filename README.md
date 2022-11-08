@@ -21,7 +21,7 @@ Prazos
 
 
 
-Especificações do Trabalho 2 • 
+Especificações do Trabalho 1 • 
 
 Cada grupo deve encontrar os pré requisitos do trabalho:
 1.	Usar a soma os elementos da matrícula para definir o tamanho da  matriz.
