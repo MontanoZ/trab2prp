@@ -7,6 +7,8 @@ int indice_l, indice_c;
 int matrix[41][41];
 int matrix2[41][41];
 
+
+//Cria a base para as matrizes finais
 void desenha_quadrado_xis() {
   for (indice_l =0; indice_l < 41; indice_l++) {
     for (indice_c =0; indice_c < 41; indice_c++) {
@@ -22,6 +24,7 @@ void desenha_quadrado_xis() {
   }
 }
 
+//Cria telhado da casa
 void desenha_triangulo_casa() {
   int arco = 0;
   indice_c = 20;
@@ -39,6 +42,7 @@ void desenha_triangulo_casa() {
 }
 
 
+//Cria parede da casa
 void desenha_parede_casa() {
   for (indice_l = 35; indice_l < 41; indice_l++) {
     for (indice_c = 2; indice_c < 39; indice_c++) {
@@ -47,6 +51,8 @@ void desenha_parede_casa() {
   }
 }
 
+
+//  Soma a matriz base com a matriz 1 para formar o X
 void somatorio_matrix() {
   int somatorio = 0;
   for (indice_l = 0; indice_l < 41; indice_l++) {
@@ -64,6 +70,8 @@ void somatorio_matrix() {
 
 }
 
+// Soma a matriz base com as demais matrizes que tiveram a matriz 2 como base para desenhar a casa
+
 void somatorio_matrix2() {
   int somatorio = 0;
   for (indice_l = 0; indice_l < 41; indice_l++) {
@@ -78,6 +86,8 @@ void somatorio_matrix2() {
   }
 
 }
+
+// Função main para chamar as demais funções
 
 int main(void) {
   desenha_quadrado_xis();
