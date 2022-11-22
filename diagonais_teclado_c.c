@@ -7,6 +7,7 @@ int indice_l, indice_c;
 int matrix[41][41];
 int matrix2[41][41];
 
+//Cria a base para as matrizes finais
 void desenha_quadrado_xis() {
   for (indice_l =0; indice_l < 41; indice_l++) {
     for (indice_c =0; indice_c < 41; indice_c++) {
@@ -22,7 +23,7 @@ void desenha_quadrado_xis() {
   }
 }
 
-
+//Cria monitor
 void desenha_monitor() {
   for (indice_l = 10; indice_l < 25; indice_l++) {
     for (indice_c = 2; indice_c < 39; indice_c++) {
@@ -31,6 +32,7 @@ void desenha_monitor() {
   }
 }
 
+//Cria teclado
 void desenha_teclado() {
   for (indice_l = 28; indice_l < 37; indice_l++) {
     for (indice_c = 3; indice_c < 30; indice_c++) {
@@ -39,7 +41,7 @@ void desenha_teclado() {
   }
 }
 
-
+// Cria mouse
 void desenha_mouse() {
   for (indice_l = 30; indice_l < 35; indice_l++) {
     for (indice_c = 35; indice_c < 39; indice_c++) {
@@ -48,6 +50,7 @@ void desenha_mouse() {
   }
 }
 
+//  Soma a matriz base com a matriz 1 para formar o X
 void somatorio_matrix() {
   int somatorio = 0;
   for (indice_l = 0; indice_l < 41; indice_l++) {
@@ -65,6 +68,8 @@ void somatorio_matrix() {
 
 }
 
+
+// Soma a matriz base com as demais matrizes que tiveram a matriz 2 como base para desenhar o setup de PC
 void somatorio_matrix2() {
   int somatorio = 0;
   for (indice_l = 0; indice_l < 41; indice_l++) {
@@ -80,6 +85,8 @@ void somatorio_matrix2() {
 
 }
 
+
+// Função main para chamar as demais funções
 int main(void) {
   desenha_quadrado_xis();
   desenha_monitor();
