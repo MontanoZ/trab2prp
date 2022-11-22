@@ -22,26 +22,10 @@ void desenha_quadrado_xis() {
   }
 }
 
-void desenha_triangulo_casa() {
-  int arco = 0;
-  indice_c = 20;
-  for (indice_l = 15; indice_l < 35; indice_l++) {
-    //for (indice_c = 10; indice_c < 40; indice_c++) {
-    if (indice_l == 15) {
-        matrix2[indice_l][indice_c] = 1;
-        arco++;
-      } else {
-        matrix2[indice_l][indice_c+arco] = 1;
-        matrix2[indice_l][indice_c-arco] = 1;
-        arco++;
-    }
-  }
-}
-
 
 void desenha_parede_casa() {
   for (indice_l = 35; indice_l < 41; indice_l++) {
-    for (indice_c = 2; indice_c < 39; indice_c++) {
+    for (indice_c = 3; indice_c < 39; indice_c++) {
       matrix2[indice_l][indice_c] = 1;
     }
   }
@@ -82,7 +66,6 @@ void somatorio_matrix2() {
 int main(void) {
   desenha_quadrado_xis();
   desenha_parede_casa();
-  desenha_triangulo_casa();
   somatorio_matrix();
   somatorio_matrix2();
   return 0;
