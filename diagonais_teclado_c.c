@@ -23,10 +23,27 @@ void desenha_quadrado_xis() {
 }
 
 
-void desenha_parede_casa() {
-  for (indice_l = 35; indice_l < 41; indice_l++) {
-    for (indice_c = 3; indice_c < 39; indice_c++) {
+void desenha_monitor() {
+  for (indice_l = 10; indice_l < 25; indice_l++) {
+    for (indice_c = 2; indice_c < 39; indice_c++) {
+      matrix2[indice_l][indice_c] = 8;
+    }
+  }
+}
+
+void desenha_teclado() {
+  for (indice_l = 28; indice_l < 37; indice_l++) {
+    for (indice_c = 3; indice_c < 30; indice_c++) {
       matrix2[indice_l][indice_c] = 1;
+    }
+  }
+}
+
+
+void desenha_mouse() {
+  for (indice_l = 30; indice_l < 35; indice_l++) {
+    for (indice_c = 35; indice_c < 39; indice_c++) {
+      matrix2[indice_l][indice_c] = 7;
     }
   }
 }
@@ -65,7 +82,9 @@ void somatorio_matrix2() {
 
 int main(void) {
   desenha_quadrado_xis();
-  desenha_parede_casa();
+  desenha_monitor();
+  desenha_teclado();
+  desenha_mouse();
   somatorio_matrix();
   somatorio_matrix2();
   return 0;
